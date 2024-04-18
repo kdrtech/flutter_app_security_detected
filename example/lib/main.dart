@@ -6,7 +6,7 @@ import 'flutter_app_security_detected_example.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   FlutterAppSecurityDetectedConfig().setConfig(
-    allowSecurityDetected: false,
+    allowSecurityDetected: true,
     securityDetectedTitle: "Security Detected",
     securityDetectedMessage:
         "This application will not run while a jailbreak or in development mode.",
@@ -16,12 +16,12 @@ void main() async {
       print(developerMode);
     },
     textTitleStyle: const TextStyle(
-      color: Colors.blue,
+      color: Colors.red,
       fontSize: 30,
     ),
-    textBodyStyle: const TextStyle(
+    textBodyStyle: TextStyle(
       fontSize: 20,
-      color: Colors.grey,
+      color: Colors.red.withAlpha(100),
     ),
     textButtonStyle: const TextStyle(
       color: Colors.red,

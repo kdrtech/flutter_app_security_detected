@@ -5,6 +5,11 @@ import 'package:flutter_jailbreak_detection/flutter_jailbreak_detection.dart';
 
 import 'flutter_app_security_detected_view.dart';
 
+/// FlutterAppSecurityDetectedStatefulWidget is the main class of the FlutterAppSecurityDetectedStatefulWidget API.
+///
+/// App must be use this class to get notify app secure.
+/// you can check some required, some not.
+///
 class FlutterAppSecurityDetectedStatefulWidget extends StatefulWidget {
   @override
   FlutterAppSecurityDetectedStatefulWidgetState createState() =>
@@ -28,9 +33,13 @@ class FlutterAppSecurityDetectedStatefulWidgetState<
   }
 
   Future<void> initPlatformState() async {
+    /// The [jailbroken] jailbroken status
     bool jailbroken;
+
+    /// The [developerMode] developerMode status
     bool developerMode;
-    // Platform messages may fail, so we use a try/catch PlatformException.
+
+    /// Platform messages may fail, so we use a try/catch PlatformException.
     try {
       jailbroken = await FlutterJailbreakDetection.jailbroken;
       developerMode = await FlutterJailbreakDetection.developerMode;

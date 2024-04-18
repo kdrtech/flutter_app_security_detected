@@ -1,8 +1,7 @@
 name: flutter_app_security_detected
-description: A starting point for Dart libraries or applications.
+description: flutter_app_security_detected lib allow your app to detected security device both(dev and jailbreak).
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
-
+homepage: https://github.com/kdrtech/flutter_app_security_detected
 environment:
   sdk: ^3.2.6
 
