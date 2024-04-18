@@ -28,3 +28,21 @@ Highly feature flutter_app_security_detected widget for Flutter.
 | ![Image](https://raw.githubusercontent.com/kdrtech/flutter_app_security_detected/master/example/assets/enabled-detected.png)
 | :------------: |
 | **Enabled Detected**|
+
+## Features
+
+* Eanble or disabled security detected.
+* Change style dialog.
+
+## Usage
+
+Make sure to check out [examples](https://github.com/kdrtech/flutter_app_security_detected/tree/master/example/lib)
+
+### Installation
+
+Add the following line to `pubspec.yaml`:
+
+```yaml
+dependencies:
+  flutter_app_security_detected: ^1.0.0
+```
